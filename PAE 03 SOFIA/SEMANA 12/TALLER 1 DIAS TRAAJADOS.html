@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDIXIONALES SI</title>
+    <link rel="stylesheet" href="./css/estilos 01.css">
+<body>
+    <h1>uso condicional si</h1>
+    <p>programa escrip que capture la cantidad de dias trabajaados
+    y el valor del dia,si los dias tranajados son mayores a 15 
+    se le dara una bonificacion de $50.000 de lo contrario nada 
+    ,calcular el valor a apagar va el empleado</p>
+    <br>
+    <script>
+        let dias,vdias,subtotal,bonificacion,total;
+        bonificacion=50000
+        dias= parseInt(prompt("ingrse la cantidad de dias trabajados"));
+        vdias= parseInt(prompt("ingrse el valor del dia a pagar"));
+        subtotal=dias*vdias;//total pagado sin bono
+        if(dias>15){
+            total=subtotal+bonificacion;
+            document.write
+            ("<table><caption>realcion de pagos</caption><tr><th>dias trabajados</th><td>",dias,"</td></tr><tr><th>valor dias $ </th><td>",vdias,"</td></tr><tr><th> bonificacion $ </th><td>",bonificacion,"</td></tr><tr><th>valor a pagar $</th><td>",total,"</td</tr></table>");
+            
+        }else{
+            bonificacion=0;
+            total=subtotal+bonificacion;
+            document.write
+            ("<table><tr><th>dias trabajados</th><td>",dias,"</td></tr><tr><th>valor dias $ </th><td>,",vdias,"</td></tr><tr><th> bonificacion $ </th><td>",bonificacion,"</td></tr><tr><th>valor a pagar $</th><td>",total,"</td</tr></table>");
+        
+        }
+    </script>
+
+
+</body>
+</html>
